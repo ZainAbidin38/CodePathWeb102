@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  font-family: sans-serif;
+  padding: 2rem;
+  background: #e7f5fc;
+}
+
+.motorcycle-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 2rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+/* Responsive: 2 columns for medium screens */
+@media (max-width: 900px) {
+  .motorcycle-board {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive: 1 column for small/mobile screens */
+@media (max-width: 600px) {
+  .motorcycle-board {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+}
